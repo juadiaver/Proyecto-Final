@@ -39,9 +39,7 @@ class LoginController extends Controller
     }
 
     public function redirectPath(){
-        if(auth()->user()->role=0){ 
-            return '/home';
-        }
-        return '/';
+        
+        return '/home';
     }
 }
